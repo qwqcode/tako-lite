@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tako Lite</title>
+  <link rel="stylesheet" href="tako.css">
+  <script>
+    window.takoLiteConfig = {
+      server: 'ws://127.0.0.1:23321'
+    }
+  </script>
+  <script src="tako.js"></script>
+</head>
+<body>
+  <div class="app">
+    <div class="wrap">
+      <div class="notify-wrap"></div>
+      <div class="page builder-page">
+      <div class="builder">
+        <h2><span style="color: #0083ff">TAKO</span> LITE.</h2>
+        <div class="form-box">
+          <input type="text" name="your_id" placeholder="你的 ID">
+          <button data-action="create-space">创建 SPACE</button>
+        </div>
+        <div class="or">or</div>
+        <div class="form-box">
+          <input type="text" name="others_id" placeholder="TA 的 ID">
+          <button data-action="enter-space">进入 SPACE</button>
+        </div>
+      </div>
+      </div>
+      <div class="page message-page" style="display: none;">
+      <div class="board"></div>
+      <div class="editor">
+        <textarea class="editor-textarea" placeholder="输入内容..."></textarea>
+        <div class="ctrl-bar">
+          <button class="send-btn" data-action="send">发送</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
